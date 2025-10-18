@@ -1,25 +1,20 @@
 import { WaitlistForm } from "@/components/WaitlistForm";
 import heroCityscape from "@/assets/hero-cityscape.png";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-background text-foreground">
+  return <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image with Overlay */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroCityscape})` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: `url(${heroCityscape})`
+      }}>
           <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/70 to-background"></div>
         </div>
 
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-4 py-20 text-center animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-neon-flicker">
-            <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              THE QUARTER BILLBOARD
-            </span>
+            
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground italic mb-4">
@@ -28,23 +23,17 @@ const Index = () => {
 
           <div className="h-px w-32 mx-auto bg-gradient-to-r from-transparent via-primary to-transparent my-8"></div>
 
-          <h2 className="text-3xl md:text-4xl font-semibold mb-6">Enter the City</h2>
+          <h2 className="text-3xl md:text-4xl font-semibold mb-6">The World Awaits</h2>
           
-          <p className="text-lg md:text-xl text-foreground/90 mb-3 max-w-2xl mx-auto">
-            For 25 minutes every hour, the city opens its streets.
-          </p>
-          <p className="text-lg md:text-xl text-foreground/90 mb-8 max-w-2xl mx-auto">
-            For the next 35, it belongs to seven brands.
-          </p>
+          <p className="text-lg md:text-xl text-foreground/90 mb-3 max-w-2xl mx-auto">for 25 minutes every hour, the city opens its streets.</p>
+          <p className="text-lg md:text-xl text-foreground/90 mb-8 max-w-2xl mx-auto">for the next 35, it belongs to the seven.</p>
 
-          <p className="text-base text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Access opens soon — step into a world where light and rhythm define discovery.
-          </p>
+          <p className="text-base text-muted-foreground mb-8 max-w-2xl mx-auto">Access opens soon, step into a world where light and rhythm define discovery.</p>
 
           <WaitlistForm />
 
           <p className="text-sm text-muted-foreground mt-6 max-w-2xl mx-auto">
-            <span className="text-accent font-semibold">Early members get 25% off billboard slots</span> (for the first 25 days only) 
+            <span className="text-accent font-semibold">early members get 25% off billboard slots</span> (for the first 25 days only) 
             and first access when the city goes live.
           </p>
         </div>
@@ -174,9 +163,7 @@ const Index = () => {
       {/* Final CTA */}
       <section className="py-20 px-4 text-center">
         <div className="container mx-auto max-w-3xl">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-            The City Awaits
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">The World Awaits</h2>
           
           <p className="text-xl text-muted-foreground mb-8 italic">
             The next cycle begins soon.
@@ -196,8 +183,6 @@ const Index = () => {
           <p>&copy; 2025 The Quarter Billboard. All rights reserved.</p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
