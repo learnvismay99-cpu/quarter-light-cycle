@@ -9,13 +9,13 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Cyberpunk cityscape theme */
-    --background: 228 45% 7%;
+    --background: 228 40% 12%;
     --foreground: 210 40% 98%;
 
-    --card: 230 40% 12%;
+    --card: 230 35% 16%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 230 40% 12%;
+    --popover: 230 35% 16%;
     --popover-foreground: 210 40% 98%;
 
     /* Neon cyan primary */
